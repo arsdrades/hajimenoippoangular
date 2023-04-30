@@ -1,0 +1,40 @@
+<div class="bg-dark">
+<div class="p-5">
+  <h1 class="text-center text-light">Personajes</h1>
+</div>
+
+<div class="row justify-content-center mx-auto ">
+    <div class="col-2">
+    <select class="form-select " aria-label="Default select example">
+        <option selected>Gimnasio</option>
+        <option value="1">Kamogawa</option>
+        <option value="2">Kawahara</option>
+        <option value="3">Kinoshita</option>
+      </select>
+    </div>
+    <div class="col-2">
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Categoria</option>
+            <option value="1">Pluma</option>
+            <option value="2">Mediano</option>
+            <option value="3">Pesado</option>
+          </select>
+        </div>
+        <div class="col-2">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Alfabeticamente</option>
+                <option value="1">A-Z</option>
+                <option value="2">Z-A</option>
+              </select>
+            </div>
+
+
+</div>
+
+<div class="row row-cols-1 row-cols-sm- row-cols-md-4 g-2 p-4 mx-auto">
+  <app-tarjeta [dataEntrante]="tarjeta" *ngFor="let tarjeta of ArregloTarjetas"></app-tarjeta>
+</div>
+
+</div>
+
+<app-footer></app-footer>
